@@ -63,10 +63,6 @@ img {
   display: block;
 }
 
-*:hover,
-:focus {
-  transition: var(--time-transition) var(--duration-transition);
-}
 /* *:focus {
   outline: none;
 } */
@@ -139,6 +135,8 @@ nav {
 
   color: var(--title-color);
   text-decoration: none;
+
+  transition: var(--time-transition) var(--duration-transition);
 }
 
 .header-address {
@@ -154,6 +152,8 @@ nav {
   display: flex;
   color: var(--main-color);
   fill: var(--main-color);
+
+  transition: var(--time-transition) var(--duration-transition);
 }
 
 .nav-link:hover,
@@ -425,6 +425,8 @@ nav {
   border-radius: 50%;
   background-color: transparent;
   fill: var(--icon-main);
+
+  transition: var(--time-transition) var(--duration-transition);
 }
 
 .social-link:hover,
@@ -475,6 +477,7 @@ nav {
   border: transparent;
 
   cursor: pointer;
+  transition: var(--time-transition) var(--duration-transition);
 }
 
 .portfolio-button:not(:last-child) {
@@ -509,6 +512,8 @@ nav {
 .portfolio-item-link {
   display: block;
   position: relative;
+
+  transition: var(--time-transition) var(--duration-transition);
 }
 
 .portfolio-item-link:hover,
@@ -560,10 +565,6 @@ nav {
   border-top: 1px solid transparent;
 }
 
-.portfolio-item-link:hover .portfolio-item-details,
-.portfolio-item-link:focus .portfolio-item-details {
-}
-
 .portfolio-item-title {
   margin-bottom: 4px;
   margin-left: 17px;
@@ -598,11 +599,15 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 170px;
   height: 90px;
+
   fill: var(--icon-main);
   border: 1px solid var(--icon-main);
   border-radius: 4px;
+
+  transition: var(--time-transition) var(--duration-transition);
 }
 
 .clients-item-link:hover,
