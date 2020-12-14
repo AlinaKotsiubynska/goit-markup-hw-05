@@ -13,6 +13,9 @@
   --logo-font: "Raleway", sans-serif;
 
   --portfolio-item-gep: 30px;
+
+  --time-transition: 250ms;
+  --duration-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*BODY*/
@@ -60,6 +63,10 @@ img {
   display: block;
 }
 
+*:hover,
+:focus {
+  transition: var(--time-transition) var(--duration-transition);
+}
 /* *:focus {
   outline: none;
 } */
@@ -510,6 +517,38 @@ nav {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-item-link:hover .portfolio-item-description,
+.portfolio-item-link:focus .portfolio-item-description {
+  transform: translateY(0);
+}
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item-description {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 63px 24px;
+  height: 294px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+
+  background-image: linear-gradient(
+    rgba(33, 150, 243, 0.9),
+    rgba(33, 150, 243, 0.9)
+  );
+
+  transform: translateY(100%);
+  transition: var(--time-transition) var(--duration-transition);
+}
+
 .portfolio-img {
   width: 100%;
 }
@@ -519,6 +558,10 @@ nav {
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
   border-top: 1px solid transparent;
+}
+
+.portfolio-item-link:hover .portfolio-item-details,
+.portfolio-item-link:focus .portfolio-item-details {
 }
 
 .portfolio-item-title {
@@ -540,25 +583,6 @@ nav {
   font-size: 16px;
   line-height: 1.87em;
   letter-spacing: 0.03em;
-}
-
-.portfolio-item-description {
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 63px 24px;
-  height: 294px;
-
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
-
-  background-image: linear-gradient(
-    rgba(33, 150, 243, 0.9),
-    rgba(33, 150, 243, 0.9)
-  );
 }
 
 /*PORTFOLIO*/
