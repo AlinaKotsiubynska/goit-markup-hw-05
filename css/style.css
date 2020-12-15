@@ -269,13 +269,6 @@ nav {
 
 /* MODAL WINDOW */
 
-.modal.is-hidden {
-  visibility: hidden;
-  pointer-events: none;
-  opacity: 0;
-  /* transition: opacity var(--time-transition) var(--duration-transition); */
-}
-
 .modal {
   position: fixed;
   top: 0;
@@ -288,6 +281,12 @@ nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 
   transition: var(--time-transition) var(--duration-transition);
+}
+
+.modal.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .modal-window {
@@ -318,6 +317,7 @@ nav {
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: transparent;
 
   cursor: pointer;
 }
