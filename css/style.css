@@ -710,6 +710,11 @@ nav {
 /*FOOTER*/
 
 /* MODAL WINDOW */
+.modal.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .modal {
   position: fixed;
@@ -743,6 +748,7 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   justify-content: center;
+  cursor: pointer;
 }
 /* 
 .close-btn-icon {
